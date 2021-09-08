@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome Farmer</title>
-    <!--<link rel="stylesheet" href="css/style.css">-->
+
 </head>
 <body>
-    <!-- home container id starts -->
+
     <div id="home-container">
-        <!-- inner sub id starts -->
+
         <div id="inner">
             <img src="logo.JPG" alt="Logo" id="logo" class="id">
             <h1>Landing Farmer Content Here</h1>
@@ -20,25 +20,23 @@
             <p>Do login Or Register If new</p>
             <a href="#" class="cta cta--white ">Login</a>
             <a href="#" class="cta cta--white ">Register</a>
+            <br/><br/><br/> 
+            <a href="firstpage.html" type="button" class="button"  >Back</a>
         </div>
-        <!-- inner sub id ends -->
 
-        <!-- illustration sub id starts -->
+        
         <div id="illustration">
             <img src="build.JPG" alt="dash img" id="dash" class="crypto-icons">
             <img src="connect.JPG" alt="iota img" id="iota" class="crypto-icons">
             <img src="explore.JPG" alt="eth img" id="eth" class="crypto-icons">  
             <img src="logo.JPG" alt="monitor img" id="monitor" class="main">
         </div>
-        <!-- illustration sub id ends -->
     </div>
-    <!-- home container id ends -->
 
 </body>
 
 
 <style>
-    @import url("https://fonts.googleapis.com/css?family=Montserrat:300,700"); /* import Montserrat font  */
 
 * {
     box-sizing: border-box;
@@ -57,6 +55,22 @@ body {
     background: #f4f4f4 url("../assets/candlebg.svg");
     background-size: cover;
 }
+
+
+.button{
+            color: rgb(4, 1, 17);
+            padding: 10px 25px;
+            margin-top: 10000px;
+            background: #09c7e9c9;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 12px;
+            align-items: center;
+}
+
 
 #home-container {
     display: grid;
@@ -144,7 +158,7 @@ p.subtitle {
 @keyframes pulse {to {box-shadow: 0 0 0 20px rgba(9, 187, 233, 0);}}
 
 #monitor {
-    animation: monitorIn 1s ease-in-out forwards; /* assign animation to monitor with 'monitorIn' as keyframe name */
+    animation: monitorIn 1s ease-in-out forwards;
     opacity: 0;
 }
 
@@ -168,7 +182,7 @@ p.subtitle {
 #dash {
     margin-top: 0%;
     margin-left: 9%;
-    animation: chatblips  ease-in-out 5s forwards infinite; /* assign animation to dash with 'chatblips' as keyframe name */
+    animation: chatblips  ease-in-out 5s forwards infinite;
     opacity: 0;
     z-index: 2;
     opacity: 0.8 ;
@@ -177,7 +191,7 @@ p.subtitle {
 #eth {
     margin-top: 13%;
     margin-left: 22%;
-    animation: chatblips ease-in-out 5s forwards infinite; /* assign animation to eth with 'chatblips' as keyframe name */
+    animation: chatblips ease-in-out 5s forwards infinite; 
     opacity: 0.8;
     z-index: 2;
 }
@@ -185,7 +199,7 @@ p.subtitle {
 #iota {
     margin-top: 15%;
     margin-left: 5%;
-    animation: chatblips ease-in-out 5s forwards infinite; /* assign animation to iota with 'chatblips' as keyframe name */
+    animation: chatblips ease-in-out 5s forwards infinite; 
     opacity: 0.8;
     z-index: 2;
 }
@@ -202,7 +216,6 @@ p.subtitle {
 }
 
 @keyframes chatblips {
-    /* taken from http://angrytools.com/css/animation/ for bounce-in animation*/
     0% {
         opacity: 0.6;
         transform: scale(0.9);
